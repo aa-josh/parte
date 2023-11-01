@@ -1,0 +1,140 @@
+:root {
+  --white: white;
+  --bg: #0a0a0a;
+  --shadow: 2px 2px 2px rgba(255, 255, 255, 0.9);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Edu TAS Beginner", cursive;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bendera.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: white;
+  margin-top: -2rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+}
+
+.hero h4 {
+  font-family: "Sacramento";
+  font-size: 6rem;
+  color: var(--bg);
+  text-shadow: var(--shadow);
+}
+
+.hero p {
+  font-size: 2.3rem;
+  color: var(--pink);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+}
+
+.hero h3 {
+  font-size: 2.2rem;
+  color: var(--bg);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-top: -0.5rem;
+}
+
+.hero h3 span {
+  color: white;
+  font-size: 3rem;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9);
+}
+
+.hero h5 {
+  color: var(--bg);
+  text-shadow: var(--shadow);
+  margin-top: 0.3rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hero a {
+  background-color: red;
+  color: white;
+  font-size: 2rem;
+  padding: 0.1rem 1rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero a:hover {
+  color: red;
+  background-color: black;
+}
+
+/* responsive */
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 100%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 70px;
+  }
+}
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 6px;
+    margin: 5px;
+  }
+}
+/* mobile */
+@media (max-width: 576px) {
+  html {
+    font-size: 65%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 40px;
+    margin: 3px;
+  }
+
+  .hero h1 {
+    margin-top: -2rem;
+  }
+
+  .hero p {
+    padding: 0 20%;
+    margin-top: -1.5rem;
+  }
+
+  .hero h3 {
+    padding: 0 6%;
+    margin-top: 0.5rem;
+  }
+
+  .hero h5,
+  .hero a {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}

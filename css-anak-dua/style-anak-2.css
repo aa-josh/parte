@@ -1,0 +1,72 @@
+.anak-dua {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  background-color: rgb(220, 255, 220);
+  position: relative;
+}
+
+.anak-dua .container {
+  padding: 2rem 5%;
+  height: 100vh;
+  text-align: center;
+  font-family: "Edu TAS Beginner";
+}
+
+.container img {
+  display: block;
+  width: 13%;
+  margin: auto;
+}
+
+.container h1,
+.visi h3,
+.misi h3 {
+  font-family: "Tangerine";
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(59, 2, 61);
+}
+
+.container h2 {
+  font-size: 1.7rem;
+  margin-top: -1rem;
+}
+
+.content {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.visi p,
+.misi p {
+  font-size: 1.7rem;
+  margin: 0.1rem;
+}
+
+.container a {
+  background-color: red;
+  color: white;
+  font-size: 1.4rem;
+  padding: 0.1rem 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.container a:hover {
+  color: red;
+  background-color: black;
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 90%;
+  }
+
+  .container a {
+    margin-top: 2rem;
+  }
+}
